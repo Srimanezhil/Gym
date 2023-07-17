@@ -1,0 +1,118 @@
+.plans-container{
+    margin-top: -4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+
+.plans-blur-1{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+}
+
+.plans-blur-2{
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+}
+
+.plans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+}
+
+.plan:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+
+.plan>img:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan>span:nth-of-type(1){
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.plan>span:nth-of-type(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.plan>div:nth-of-type(4){
+    font-size: 0.8rem;
+}
+
+.plan>div:nth-of-type(1){
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.plan>div:nth-of-type(2){
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.plan>div:nth-of-type(3){
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.plan>div>span:nth-of-type(1){
+    position: relative;
+    top: 0.5rem;
+}
+
+.feature{
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan>button{
+    padding: 0.5rem;
+    border: none;
+}
+
+.button{
+    color: orange;
+}
+
+.arrow{
+    width: 1.2rem;
+    height: 1.2rem;
+    position: relative;
+    top: 0.4rem;
+    left: 0.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .plans{
+        flex-direction: column;
+    }
+
+    .plan:nth-child(2){
+        transform: none;
+    }
+}
